@@ -79,13 +79,6 @@ contract Aluguel {
         contaLocador.transfer(msg.value);
         statusPagamento.push(true);
     }
-
-    // Como estava antes
-    //function receberPagamento() public payable {
-        //require(msg.value>=valor, "Valor insuficiente");
-        //contaLocador.transfer(msg.value);
-       // statusPagamento.push(true);
-    //}
     
     //msg.value = valor em wei enviado ao contrato
     
