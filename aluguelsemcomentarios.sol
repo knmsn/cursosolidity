@@ -18,12 +18,7 @@ contract Aluguel {
     uint256 private valor;
     uint256 constant public numeroMaximoLegalDeAlugueisParaMulta = 3;
     bool[] public statusPagamento;
-    /*
-    0 - 01/2020 = true
-    1 - 02/2020 = true
-    2 - 03/2020 = true
-    3 - 04/2020 = true
-    */
+
     address payable public contaLocador;
     address public owner;
     address payable private contaLocadorPersisted;
@@ -79,8 +74,6 @@ contract Aluguel {
         contaLocador.transfer(msg.value);
         statusPagamento.push(true);
     }
-    
-    //msg.value = valor em wei enviado ao contrato
     
     function retornaTexto(uint256 _parametro) public view returns (string memory) {
         if ((valor * _parametro) > 5000) {
