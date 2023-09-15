@@ -19,6 +19,7 @@ contract Aluguel {
     */
     address payable public contaLocador;
     address public owner;
+    address payable private contaLocadorPersisted;
 
     constructor(    string memory _nomeLocador, 
                     string memory _nomeLocatario, 
@@ -66,7 +67,7 @@ contract Aluguel {
     
 
     function receberPagamento() public payable {
-        require(msg.contaLocador=contaLocador, "Não é o locador");
+        require(contaLocadorPersisted==contaLocador, "Nao e o locador");
         contaLocador.transfer(msg.value);
         statusPagamento.push(true);
     }
