@@ -2,7 +2,7 @@
 SPDX-License-Identifier: CC-BY-4.0
 (c) Desenvolvido por Jeff Prestes
 This work is licensed under a Creative Commons Attribution 4.0 International License.
-hash contrato = 0xDB511689e22FF4c8d0d0f9c63DB575ea8759b0d0
+hash contrato = 0xbA04F859229319c761A2A56ed2a32E06BC6e4F56
 */
 
 pragma solidity 0.8.19;
