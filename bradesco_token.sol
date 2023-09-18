@@ -1,7 +1,7 @@
 /*
-SPDX-License-Identifier: CC-BY-4.0
-(c) Desenvolvido por Jeff Prestes
-This work is licensed under a Creative Commons Attribution 4.0 International License.
+
+hash contrato = 0xd9145CCE52D386f254917e481eB44e9943F39138
+
 */
 
 pragma solidity 0.8.19;
@@ -163,8 +163,8 @@ contract USDC is IERC20Metadata, Owned {
     }    
 
     constructor() {
-        myName = "BRL Aluno 12";
-        mySymbol = "BRL@Aluno12";
+        myName = "BRL Aluno ";
+        mySymbol = "BRL@11";
         myDecimals = 2;
         mint(msg.sender, (1000000000 * (10 ** myDecimals)));
     }
